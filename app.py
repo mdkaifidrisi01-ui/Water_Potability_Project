@@ -33,7 +33,7 @@ st.markdown("""
 @st.cache_resource
 def load_artifacts():
     # We only need to load ONE file now, because the SVM pipeline contains the scaler and imputer automatically!
-    svm_pipeline = joblib.load('best_svm_pipeline.pkl')
+    model = pickle.load(open('models/best_model.pkl', 'rb'))
     return svm_pipeline
 
 try:

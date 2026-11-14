@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import joblib
 import streamlit as st
-
+import pickle
 # 1. Page Configuration and Water-Themed CSS
 st.set_page_config(page_title="Water Potability Prediction", page_icon="💧", layout="wide", initial_sidebar_state="expanded")
 

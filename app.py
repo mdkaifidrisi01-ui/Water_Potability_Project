@@ -33,7 +33,7 @@ st.markdown("""
 @st.cache_resource
 def load_artifacts():
     # We only need to load ONE file now, because the SVM pipeline contains the scaler and imputer automatically!
-  svm_pipeline = joblib.load('models/best_svm_pipeline.pkl')
+    svm_pipeline = joblib.load('models/best_svm_pipeline.pkl')
     return svm_pipeline
 
 try:
